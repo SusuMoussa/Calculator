@@ -8,4 +8,7 @@ def multiply ( n1, n2):
     return n1 * n2
 
 def divided (n1, n2):
-    return n1 / n2
+    try:
+        return n1 / n2 
+    except ZeroDivisionError:
+        return None
